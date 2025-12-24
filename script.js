@@ -61,10 +61,10 @@ function updateStrengthMeter(password) {
   // but this will make sure that "at maximum" you would get 40
   strengthScore += Math.min(passwordLength, 40); 
 
-  if (hasUppercase) strengthScore += 25;
-  if (hasLowercase) strengthScore += 25;
-  if (hasNumbers) strengthScore += 25;
-  if (hasSymbols) strengthScore += 25;
+  if (hasUppercase) strengthScore += 15;
+  if (hasLowercase) strengthScore += 15;
+  if (hasNumbers) strengthScore += 15;
+  if (hasSymbols) strengthScore += 15;
 
   // enforce minimum score for every short password
   if (passwordLength < 12) {
